@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dashboard Islami</string>
+    <string name="welcome">Assalamualaikum, Fulan</string>
+    <string name="doa">Doa</string>
+    <string name="dzikir">Dzikir</string>
+    <string name="zakat">Zakat</string>
+    <string name="jadwal_shalat">Jadwal Shalat</string>
+    <string name="kajian">Kajian</string>
+    <string name="inpiration">Inpiration</string>
+</resources>
