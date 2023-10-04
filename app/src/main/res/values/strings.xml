@@ -8,5 +8,9 @@
     <string name="kajian">Kajian</string>
     <string name="inpiration">Inpiration</string>
     <string name="pagi_dan_malam">Pagi dan Malam</string>
-    <string name="rumah">Rumah</string>
+    <string name="rumah">Doa Rumah</string>
+    <string name="makanan_dan_minuman"><![CDATA[Makanan & Minuman]]></string>
+    <string name="perjalanan">Doa Perjalanan</string>
+    <string name="shalat">Doa Shalat</string>
+    <string name="etika_baik">Doa Etika Baik</string>
 </resources>
