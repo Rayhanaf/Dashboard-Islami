@@ -1,5 +1,6 @@
 package com.ryn.dashboardislami.idnsolo.doa
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ryn.dashboardislami.idnsolo.R
@@ -17,9 +18,13 @@ class DoaActivity : AppCompatActivity() {
         actionBar?.title = "Doa Harian"
         actionBar?.setDisplayHomeAsUpEnabled(true)
 
-        binding = ActivityDoaBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        intentToListActivity()
+    }
 
+    private fun intentToListActivity() {
+        val intent  = Intent(this, ListDoaActivity::class.java)
+        intent.putExtra(ListDoaActivity.EXTRA_TITLE, getString(R.string.pagi_dan_malam))
+        intent.putExtra(ListDoaActivity.EXTRA_IMAGE, getString(R.string.pagi_dan_malam)
     }
 
     override fun onSupportNavigateUp(): Boolean {
