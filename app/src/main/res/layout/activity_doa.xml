@@ -22,7 +22,7 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
-            android:id="@id/img_doa"
+            android:id="@id/img_pagi_malam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="8dp"
@@ -35,7 +35,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/img_doa"
+                android:layout_below="@+id/img_pagi_malam"
                 android:orientation="vertical">
 
                 <ImageView
