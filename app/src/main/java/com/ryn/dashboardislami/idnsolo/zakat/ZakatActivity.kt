@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ryn.dashboardislami.idnsolo.R
 import com.ryn.dashboardislami.idnsolo.databinding.ActivityZakatBinding
+import java.text.NumberFormat
+import java.util.Locale
 
 class ZakatActivity : AppCompatActivity() {
 
@@ -12,6 +14,10 @@ class ZakatActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityZakatBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val actionBar = supportActionBar
+        actionBar!!.title = "Zakat"
+        actionBar.setDisplayHomeAsUpEnabled(true)
 
         initHitungZakat()
     }
@@ -30,13 +36,15 @@ class ZakatActivity : AppCompatActivity() {
                 if(!isEmptyField){
                     val emas = 92395000
                     val persen = 0.025
+                    val localeID = Locale("in", "ID")
+                    val formatRupiah: NumberFormat = NumberFormat.getCurrencyInstance(localeID)
 
                     if (totalHarta < emas.toString()){
                         binding.tvStatus.text = "Anda Belum wajib"
                     } else {
-                        val zakat = totalHarta.toDouble() * persen
+                        val zakat = totalHarta.toInt() * persen
                         binding.tvStatus.text = "Anda wajib membayar zakat"
-                        binding.tvZakatYangDikeluarkan.text = "Rp. $zakat"
+                        binding.tvZakatYangDikeluarkan.text = formatRupiah.format(zakat)
                     }
                 }
             }
