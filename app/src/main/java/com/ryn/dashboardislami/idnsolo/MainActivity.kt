@@ -10,6 +10,7 @@ import com.ryn.dashboardislami.idnsolo.doa.DoaActivity
 import com.ryn.dashboardislami.idnsolo.inspiration.InspirationData
 import com.ryn.dashboardislami.idnsolo.inspiration.InspirationListAdaptor
 import com.ryn.dashboardislami.idnsolo.inspiration.InspirationModel
+import com.ryn.dashboardislami.idnsolo.zakat.ZakatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,16 +22,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         showRecylerlist()
-        showMenu()
+        moveActivity()
     }
 
-    private fun showMenu() {
+    private fun moveActivity() {
         binding.btnDoa.setOnClickListener {
             startActivity(Intent(this, DoaActivity::class.java))
         }
+        binding.btnDzakat.setOnClickListener {
+            startActivity(Intent(this, ZakatActivity::class.java))
+        }
     }
 
-    private fun initRecyclerViewInspiration() {
+    private fun showRecylerlist() {
         val list : ArrayList<InspirationModel> = arrayListOf()
         binding.rvInspiration.setHasFixedSize(true)
         list.addAll(InspirationData.listData)
