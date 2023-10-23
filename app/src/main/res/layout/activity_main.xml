@@ -139,6 +139,7 @@
 
                 <!-- untuk menu kajian -->
                 <LinearLayout
+                    android:id="@+id/btn_kajian"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"

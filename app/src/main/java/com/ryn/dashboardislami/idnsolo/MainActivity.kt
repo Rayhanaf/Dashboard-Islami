@@ -32,6 +32,9 @@ class MainActivity : AppCompatActivity() {
         binding.btnDzakat.setOnClickListener {
             startActivity(Intent(this, ZakatActivity::class.java))
         }
+        binding.btnKajian.setOnClickListener {
+            startActivity(Intent(this, ZakatActivity::class.java))
+        }
     }
 
     private fun showRecylerlist() {
