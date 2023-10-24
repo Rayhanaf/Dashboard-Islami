@@ -31,4 +31,5 @@
     <string name="nama_channel">Nama Channel</string>
     <string name="channel_youtube">Channel Youtube</string>
     <string name="judul_kajian">Judul Kajian</string>
+    <string name="detail_kajian">Detail Kajian</string>
 </resources>
