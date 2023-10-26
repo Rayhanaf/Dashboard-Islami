@@ -51,11 +51,12 @@
                     android:text="@string/subuh"
                     android:textAlignment="center" />
 
-                <TextView
+                <TextClock
+                    android:id="@+id/tv_waktu_shalat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_semi_bold"
-                    android:text="@string/_04_00"
+                    android:hint="@string/_04_00"
                     android:textAlignment="center"
                     android:textSize="20sp" />
 
