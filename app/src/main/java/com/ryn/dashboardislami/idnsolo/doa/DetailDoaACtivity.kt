@@ -28,6 +28,12 @@ class DetailDoaACtivity : AppCompatActivity() {
         binding.tvPerawi.text = doa.profile
     }
 
+    //back
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
     companion object {
         const val EXTRA_DOA = "extra_doa"
     }

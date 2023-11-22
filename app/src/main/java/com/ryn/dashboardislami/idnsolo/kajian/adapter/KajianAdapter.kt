@@ -17,7 +17,7 @@ class KajianAdapter(private val listKajian: ArrayList<KajianModel>) :
     RecyclerView.Adapter<KajianAdapter.ListViewHolder>() {
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var imgThumbnail: ImageView = itemView.findViewById(R.id.img_thumbnail)
-        var tvPenceramah: TextView = itemView.findViewById(R.id.tv_penceramah)
+        var tvPenceramah: TextView = itemView.findViewById(R.id.tv_ceramah)
         var tvChannel: TextView = itemView.findViewById(R.id.tv_channel_youtube)
         var tvJudul: TextView = itemView.findViewById(R.id.tv_judul_kajian)
     }

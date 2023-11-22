@@ -10,6 +10,8 @@ import com.ryn.dashboardislami.idnsolo.doa.DoaActivity
 import com.ryn.dashboardislami.idnsolo.inspiration.InspirationData
 import com.ryn.dashboardislami.idnsolo.inspiration.InspirationListAdaptor
 import com.ryn.dashboardislami.idnsolo.inspiration.InspirationModel
+import com.ryn.dashboardislami.idnsolo.kajian.KajianActivity
+import com.ryn.dashboardislami.idnsolo.sholat.SholatActivity
 import com.ryn.dashboardislami.idnsolo.zakat.ZakatActivity
 import java.text.SimpleDateFormat
 import java.util.Calendar
@@ -61,7 +63,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ZakatActivity::class.java))
         }
         binding.btnKajian.setOnClickListener {
-            startActivity(Intent(this, ZakatActivity::class.java))
+            startActivity(Intent(this, KajianActivity::class.java))
+        }
+        binding.btnJadwalShalat.setOnClickListener {
+            startActivity(Intent(this, SholatActivity::class.java))
         }
     }
 
