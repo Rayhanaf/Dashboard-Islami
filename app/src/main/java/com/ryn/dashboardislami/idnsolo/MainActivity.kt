@@ -35,15 +35,18 @@ class MainActivity : AppCompatActivity() {
 
         when {
             //0..6
-            time.toInt() in 0 .. 5 -> binding.imgHeader.setImageResource(
+            time.toInt() in 0..5 -> binding.imgHeader.setImageResource(
                 R.drawable.bg_header_dashboard_night
             )
+
             time.toInt() in 6..11 -> binding.imgHeader.setImageResource(
                 R.drawable.bg_header_dashboard_morning
             )
+
             time.toInt() in 12..17 -> binding.imgHeader.setImageResource(
                 R.drawable.bg_header_dashboard_afternoon
             )
+
             time.toInt() in 6..10 -> binding.imgHeader.setImageResource(
                 R.drawable.bg_header_dashboard_night
             )
@@ -70,3 +73,4 @@ class MainActivity : AppCompatActivity() {
         val inspirationAdapter = InspirationListAdaptor(list)
         binding.rvInspiration.adapter = inspirationAdapter
     }
+}
